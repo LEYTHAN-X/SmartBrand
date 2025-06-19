@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartBrand</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <video autoplay muted loop class="loading-video">
+            <source src="loading.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-left">
+            <div class="logo">🚀 SmartBrand</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#customer">Services</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#status">Status</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" class="dark-toggle">🌙</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="overlay"></div>
+        <div class="home-content">
+            <h1 class="home-title">Welcome to SmartBrand</h1>
+            <p class="home-subtitle">Crafting digital elegance with smart features</p>
+            <a href="#features" class="cta-btn">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1716436329836-208bea5a55e6?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="About SmartBrand" />
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About SmartBrand</h2>
+                <p>
+                    SmartBrand is an AI-driven digital platform designed to create intelligent, intuitive, and visually
+                    stunning UI/UX experiences.
+                    We combine artificial intelligence with modern design to build interfaces that adapt, learn, and
+                    engage users effortlessly.
+                </p>
+                <p>
+                    From personalized interactions to dynamic design flows, SmartBrand redefines how brands connect with
+                    users in the age of intelligent automation.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Customer Services -->
+    <section id="customer" class="customer-section">
+        <h2 class="section-title">Trusted by Top Brands</h2>
+        <div class="logo-grid">
+            <div class="logo-card"><img
+                    src="data:image/png;base64,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"
+                    alt="Retool" /></div>
+            <div class="logo-card"><img
+                    src="data:image/png;base64,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"
+                    alt="ChatGPT" /></div>
+            <div class="logo-card"><img
+                    src="data:image/png;base64,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"
+                    alt="Supercell" /></div>
+            <div class="logo-card"><img
+                    src="data:image/png;base64,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"
+                    alt="Raycast" /></div>
+            <div class="logo-card"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAe1BMVEUAAAD///+lpaUTExPp6end3d1MTEzx8fH8/PzDw8OIiIiVlZXj4+PX19e+vr6tra17e3vOzs5HR0eYmJgiIiKenp5fX18LCwvn5+cyMjIdHR3R0dFAQEBnZ2c6OjpTU1NxcXGysrJpaWlzc3ODg4MuLi4hISGOjo4YGBgdpv9SAAAEMUlEQVR4nO3a6XLiOBiFYQsMttkMJEB2QjZy/1c4+JMsWwudqRqo2NPv86MLJJmIgyRk0UkCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALiip9/uQI8857/dgx7J1PS3u9AbU6VUpPg4G41Gs5eg/F7KLx3vqHLh17yGU1ZqcaZczYPiuZRfoxMXf9HLW0g/I2v8RCrevNJnKT1euhf9CGst3VSxKZBWFZlXmFWF6cW70Y+wZjos9R5W7aXiximbStn24t3oRVhLk5WKbR+K8C1Iyery/ehFWHkdlhqEld9SUbRK9AJ3K4/Hm2I+WpWvTe1+PB6v5dFuXJeFrU5epotT4WHZlPQhrIFqPJyrXtvn6ybWZWYvLE3tt1njhuWpbpecaZUk25ktXAxNWQ/C+mplFZ1cMvBm9unMTth5+8pcj6OhXvv1zJawHp1WJvRFu1C96sIehLVy+r0PG7xLRT1dlvZZqlySloR1t1U2rLtYq5VXqL9Zuh/W3u12bEMwsmMpaY2zwlxQLEZm1FTVEtYos2E1repxeGq00Y+ypvC+urb7YfnjYxI2eZIKvd7YFUyHnOpppWfVITFhSaBZqobJ2G+VvdbfGbnee+jg5Cah82FNlC/SqPn+e5BH1Y1R4YzDsr50aF5loFdtv5Vs2CTwfGcKP+zQ6nxYQVYyPqKtqsV/Zd+QPGhukGTivdmwtu0Lm3XwS/6VZazZMshUnCbdD+sQhqXXD9fRJNDs51/k0Sw17iSsQR1WvV+7r574N0s6lNSSS4uk82HdR7KKHDKYgZO17hS3sSsPdVj1zklaPXqv9XDuj3Y8rHms3+o5bKiz0Vumt6bAszBhZc5l/t7ttp9hvUWzCudN0t5a6oH3FLtwYDelxpPzrBa7tPvTMIt1W/mHDOLTVpolTR6vg3ZuWLrVp9dGJvMyCXQ6rJszWUV7XJqq+sty5Y7BOjYvrMdmLJ58ZPItqfdqX/6lnQ5rdzar6Alz7uaot5uZOVk4qLk+qffC0hPdrFrVnu7x024vzPnrjUrN3qLLYRXnw4rML7N5bDb45l54Vk43+pUO1ZGFF1ZiboWKm+khs2nr00OVHaabhXwGq67f7oz/kFXrkKFx58aQzPyLqm9RP6xd7jWStSr4nOQz6HBYwXsN35OrStc5lHDPDvLm1KEd6W0We93SKVSvUtjdsJbqj+InzN6W6b0VhFn468O/llYwc/sT5L71WRXfuqy7YfnTwxc5YR6GB6nbcpTleVp81AW742Qy8YflpEjzPJsPnN/a1oN5denq+G2bVf7zG7uC8oes6kN2R/jT9F8hesvhusLPNz31+HNYV/hhsJ+it8G+2C3i3+jcTaHr4v+ZoZfO3xS6dj+/1P/fZvCvlJGDLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAb/wDtAQizbtLdwwAAAAASUVORK5CYII="
+                    alt="Vercel" /></div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <h2 class="section-title">Powerful Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1034/1034102.png" alt="Dark Mode" />
+                <h3>Dark Mode</h3>
+                <p>Seamlessly switch between light and dark themes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Dashboard" />
+                <h3>Dashboard</h3>
+                <p>Get insights from an interactive and responsive dashboard.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/633/633759.png" alt="Real-Time Status" />
+                <h3>Status Tracking</h3>
+                <p>Stay updated with live status monitoring and alerts.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828961.png" alt="Secure" />
+                <h3>Secure Access</h3>
+                <p>Your data is encrypted and protected at every step.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status Section -->
+    <section id="status" class="status-section">
+        <div class="status-content">
+            <div class="status-text">
+                <h2 class="section-title">Real-Time System Status</h2>
+                <p>
+                    Monitor live activity across your dashboard with real-time updates and alerts.
+                    Our smart status tracker ensures you're always informed.
+                </p>
+            </div>
+            <div class="status-image">
+                <img src="assets/stats.png" alt="Status Illustration" />
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard-section">
+        <div class="dashboard-content">
+            <div class="dashboard-text">
+                <h2 class="section-title">Smart Dashboard</h2>
+                <p class="section-subtitle">
+                    Get real-time insights, user activity, and performance analytics on a single powerful dashboard.
+                </p>
+            </div>
+            <div class="dashboard-image">
+                <img src="assets/graph.png" alt="Dashboard Overview" />
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-text">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">We'd love to hear from you! Drop us a message.</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
