@@ -108,7 +108,7 @@ body.dark-mode .logo {
 .home-section {
     position: relative;
     height: 100vh;
-    background-image: url('https://media.istockphoto.com/id/2109527732/photo/quantum-horizons-abstract-cyberspace-technology-background.jpg?s=2048x2048&w=is&k=20&c=vTSSIn-7H7vfZq5Kd0agLXg-Gv9q3sdTwGU9YyIbMCc=');
+    background-image: url('https://media.istockphoto.com/id/1472760146/photo/wireframe-landscape-perspective-grid-digital-space-blue-mesh-on-a-black-background.jpg?s=612x612&w=0&k=20&c=PnpyEdzCvo730-BcAVPDE_RIzBQ16QF5yXfHZjST9Bg=');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -194,6 +194,7 @@ body.dark-mode .logo {
         opacity: 1;
     }
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -649,6 +650,72 @@ body.dark-mode .about-content p {
         display: block;
     }
 }
+
 html {
     scroll-behavior: smooth;
+}
+
+.footer {
+    background-color: #111;
+    color: #eee;
+    padding: 3rem 2rem 1.5rem;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-brand h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #4f46e5;
+}
+
+.footer-brand p {
+    max-width: 400px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #4f46e5;
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.footer-bottom strong {
+    color: #4f46e5;
+}
+
+body.dark-mode .footer {
+    background-color: #000;
+    color: #bbb;
+}
+
+body.dark-mode .footer-brand h2,
+body.dark-mode .footer-links a:hover,
+body.dark-mode .footer-bottom strong {
+    color: skyblue;
 }
